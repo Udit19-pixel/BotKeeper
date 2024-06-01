@@ -1,0 +1,143 @@
+{
+    "intents":
+    [
+        {
+            "tag" : "Greeting",
+            "patterns" :
+            [
+                "Hi",
+                "Hey",
+                "Hello",
+                "How are you?",
+                "Is anyone there?",
+                "Good day"
+            ],
+            "responses" :
+            [
+                "Hey :)",
+                "Hello there, thank you for visiting :)",
+                "Hi, what can I do for you?",
+                "Hello, How can I help you?"
+            ]
+        },
+        {
+            "tag" : "Goodbye",
+            "patterns" :
+            [
+                "Bye-bye",
+                "See you later",
+                "Good bye"
+            ],
+            "responses" :
+            [
+                "See you later",
+                "Come visit again :)",
+                "Have a very nice day :)",
+                "Bye-bye",
+                "Come back again",
+                "It was a pleasure assisting you! Have a great day!",
+                "Thank you for visiting our shop!"
+            ]
+        },
+        {
+            "tag" : "Fallback",
+            "patterns" :
+            [
+                "uh...oh...ho",
+                "umm...it is...umm"
+            ],
+            "responses" :
+            [
+                "I'm sorry, I didn't quite understand that.",
+                "Could you provide more details?",
+                "Could you please rephrase that?",
+                "Could you please repeat or clarify?"
+            ]
+        },
+        {
+            "tag" : "Item",
+            "patterns" :
+            [
+                "Which item do you have?",
+                "What kind of items are there?",
+                "What variety of products do you sell?",
+                "What do you sell?"
+            ],
+            "responses" :
+            [
+                "We offer pens, notebooks and toys.",
+                "We provide pens, notebooks and toys.",
+                "We have pens, notebooks and toys."
+            ]
+        },
+        {
+            "tag" : "Payment",
+            "patterns" : 
+            [
+                "Do you take credit cards?",
+                "Do you accept Mastercard?",
+                "Can I pay by using UPI based applications?",
+                "Can I pay with cash?",
+                "Do you have point of sale devices?"
+            ],
+            "responses" : 
+            [
+                "We accept the following payment options : Cash, VISA, RUPAY, UPI",
+                "We do accept UPI based payments.",
+                "We prefer cash as a payment method.",
+                "No, we do not take in Mastercard payments.",
+                "Yes cash payments are accepted.",
+                "Yes we have card swipers as in point of sale devices."
+            ]
+        },
+        {
+            "tag" : "Available",
+            "patterns" : 
+            [
+                "Are long sized notebooks available?",
+                "Do you have red and green pen?",
+                "Do you have character plushies?",
+                "Are there any Marvel and DC toys?"
+            ],
+            "responses" :
+            [
+                "We have Long-sized and king-sized notesbooks both rules and unruled.",
+                "We have blue, black, red and green coloured pens available.",
+                "We only have some of the anime based character's plushies.",
+                "Yes, there are many Marvel and DC toys like Hulk, Spiderman, Batman and Superman etc."
+            ]
+        },
+        {
+            "tag" : "Unavailable",
+            "patterns" :
+            [
+                "Do you have hardware tools for carpentry?",
+                "Can you take print-outs?",
+                "Do you have Utensils?",
+                "Are there any A4 sized sheets available?"
+            ],
+            "responses" : 
+            [
+                "Ah no, we don't sell hardware tools.",
+                "No, we don't take print-outs.",
+                "Unfortunately, we're out of stock for A4 sheets.Please visit tomorrow for next supply.",
+                "Sorry, we don't sell that."
+            ]
+        },
+        {
+            "tag" : "Delivery",
+            "patterns" :
+            [
+                "How long does delivery take?",
+                "How long does shipping take?",
+                "When will I get my package?"
+            ],
+            "responses" : 
+            [
+                "Delivery takes 1-2 hours.",
+                "Delivery can be done in 1-2 hours.",
+                "Shipping process takes 1-2 hours."
+            ]
+        }
+    ]
+}
