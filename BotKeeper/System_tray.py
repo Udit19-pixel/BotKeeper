@@ -1,30 +1,35 @@
-from pystray import Icon, MenuItem
+from pystray import Icon, Menu, MenuItem
 from PIL import Image
 import subprocess
+import threading
 
-DOCKER_COMPOSE_PATH = "D:/Python/BotKeeper/docker-compose.yml"
+DOCKER_COMPOSE_PATH = "docker-compose.yml"
 
-def start_container(icon, item):
+def start_container(icon, item, app):
     subprocess.Popen(['docker-compose', '-f', DOCKER_COMPOSE_PATH, 'up', '-d'])
-    icon.visible = False
+    app.start_scheduler()
+    icon.update_menu()
 
-def stop_container(icon, item):
+def stop_container(icon, item, app):
     subprocess.Popen(['docker-compose', '-f', DOCKER_COMPOSE_PATH, 'down'])
-    icon.visible = False
+    app.stop_scheduler()
+    icon.update_menu()
 
-def main():
+def main(app):
     image = Image.open("Process.png")
 
     icon = Icon("Chatbot", image)
 
-    menu_items = [
-        MenuItem('Start', lambda icon, item: start_container(icon, item)),
-        MenuItem('Stop', lambda icon, item: stop_container(icon, item))
-    ]
+    menu = Menu(
+        MenuItem('Start', lambda icon, item: start_container(icon, item, app)),
+        MenuItem('Stop', lambda icon, item: stop_container(icon, item, app))
+    )
 
-    icon.menu = menu_items
-    
-    icon.run()
+    icon.menu = menu
+
+    threading.Thread(target=icon.run).start()
 
 if __name__ == "__main__":
-    main()
+    from app import ChatApplication
+    app = ChatApplication()
+    main(app)
