@@ -13,7 +13,7 @@ This project is a chatbot application developed with deep learning and a feed-fo
 
 # Features
 
-#### The essential features of this project are -
+### The essential features of this project are -
 - Tkinter GUI for intuitive interaction with delayed responses managed by scheduler.
 - Utilizes PyTorch framework to enhance chatbot with advanced machine learning and using CUDA for GPU related hardware acceleration and faster computation of each subtask in the layers.
 - NLTK integration empowers chatbot with robust natural language understanding.
@@ -26,7 +26,7 @@ This project is a chatbot application developed with deep learning and a feed-fo
 - The Directory contains the python scripts for executing different component of the entire project. Since it's not a web application, gathering all the files in one folder will not cause a problem.
   
   <div align="center">
-        <img src="https://github.com/Udit19-pixel/BotKeeper/blob/main/BotKeeper/Images/Project_Structure.png" alt="Project Structure" width="290" height="430">
+        <img src="https://github.com/Udit19-pixel/BotKeeper/blob/main/BotKeeper/Images/Project_Structure.png" alt="Project Structure" width="290" height="450">
   </div>
 
 ## Designing container
