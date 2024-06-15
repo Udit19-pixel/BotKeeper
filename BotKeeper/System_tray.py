@@ -16,7 +16,7 @@ def stop_container(icon, item, app):
     icon.update_menu()
 
 def main(app):
-    image = Image.open("Process.png")
+    image = Image.open("Images\Process.png")
 
     icon = Icon("Chatbot", image)
 
