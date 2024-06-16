@@ -1,4 +1,4 @@
-
+![image](https://github.com/Udit19-pixel/BotKeeper/assets/83877590/cd209c2e-5510-405b-9f95-4e0b650bb86c)
 # BotKeeper
 
 # Project Description
@@ -76,7 +76,7 @@ This project is a chatbot application developed with deep learning and a feed-fo
 - The start and stop container respectively calls the methods, after calling subprocesses for building and closing down docker container.
 - The method icon.update_menu is called to create an icon of the program and the same is closed when the stop_container is called.
 
-## Dockerizing Project
+# Dockerizing Project
 - The whole idea of dockerizing this project is to made it available for different type of environments so that it can run there too.
 - First step is to create a requirements.txt file which contains the libraries needed for complete demonstration.
  ```
@@ -103,3 +103,20 @@ This project is a chatbot application developed with deep learning and a feed-fo
     <div align="center">
         <img src="https://github.com/Udit19-pixel/BotKeeper/blob/main/BotKeeper/Images/Docker_%20image.png" alt="Docker image" width="600" height="350">
     </div>
+    
+# X11 Casting
+- X11 Basics: X11, or X Window System, is a network-transparent window system that allows for graphical user interfaces on Unix-like operating systems, enabling GUIs for applications running on remote servers.
+
+- Docker X11 Forwarding: To run GUI applications inside Docker containers, X11 forwarding is used to display the application's window on the host machine's screen, necessitating sharing the X11 socket with the container.
+
+- Environment Variables: Setting the DISPLAY environment variable in the Docker container to host.docker.internal:0 allows the container to use the host's display server for rendering the GUI.
+
+- Volume Mounting: Mounting /tmp/.X11-unix from the host to the container gives the container access to the X11 Unix socket, enabling communication with the host's X server.
+
+- Security Considerations: Using xhost + on the host machine temporarily allows connections from all hosts, necessary for Docker to access the display but should be disabled (xhost -) after use for security reasons.
+
+  <div align="center">
+        <img src="https://github.com/Udit19-pixel/BotKeeper/blob/main/BotKeeper/Images/Docker_%20image.png" alt="Docker image" width="600" height="350">
+        
+
+  </div>
