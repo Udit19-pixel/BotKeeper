@@ -25,7 +25,7 @@ This project is a chatbot application developed with deep learning and a feed-fo
 - The Directory contains the python scripts for executing different component of the entire project. Since it's not a web application, gathering all the files in one folder will not cause a problem.
   
   <div align="center">
-        <img src="https://github.com/Udit19-pixel/BotKeeper/blob/main/BotKeeper/Images/Project_Structure.png" alt="Project Structure" width="270" height="450">
+        <img src="https://github.com/Udit19-pixel/BotKeeper/blob/main/BotKeeper/Images/Project_Structure.png" alt="Project Structure" width="270" height="370">
   </div>
 
 ## Designing container
