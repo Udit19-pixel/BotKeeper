@@ -112,6 +112,6 @@ This project is a chatbot application developed with deep learning and a feed-fo
 - Xming when you download and launch, comes in with different types of casting and display options. I have chosen multiple window cast where multiple windows can be overlayed on the x server (as shown in the image).
 
   <div style="display: flex; justify-content: center; align-items: center;">
-    <img src="https://github.com/Udit19-pixel/BotKeeper/blob/main/BotKeeper/Multiple%20Window%20cast.png" alt="Multiple Casting" style="width: 45%; margin-right: 10px;" />
+    <img src="https://github.com/Udit19-pixel/BotKeeper/blob/main/BotKeeper/Multiple%20Window%20cast.png" alt="Multiple Casting" style="width: 45%; height: 50%; margin-right: 10px;" />
     <img src="https://github.com/Udit19-pixel/BotKeeper/blob/main/BotKeeper/Display%20configuration.png" alt="Display Configuration" style="width: 45%;" />
   </div>
