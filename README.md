@@ -111,7 +111,7 @@ This project is a chatbot application developed with deep learning and a feed-fo
 - Security Considerations: Using xhost + on the host machine temporarily allows connections from all hosts, necessary for Docker to access the display but should be disabled (xhost -) after use for security reasons.
 - Xming when you download and launch, comes in with different types of casting and display options. I have chosen multiple window cast where multiple windows can be overlayed on the x server (as shown in the image).
 
-  <p align="center">
+  <div style="display: flex; justify-content: center;">
         <img src="https://github.com/Udit19-pixel/BotKeeper/blob/main/BotKeeper/Multiple%20Window%20cast.png" alt="Multiple Casting" width="600" height="350">
         <img src="https://github.com/Udit19-pixel/BotKeeper/blob/main/BotKeeper/Display%20configuration.png" alt="Display Configuration" width="400" height="350">
-  </p>
+  </div>
